@@ -2,20 +2,39 @@
 
 ## Executive Summary
 
-The retail dataset contains approximately 9,800 transactions across 2015–2018, with total sales of approximately **$2.26M**.
+This project analyzes retail sales performance using approximately 9,800 transaction records covering 2015–2018.
 
-The analysis highlights clear differences in performance across product categories, customer segments, and geographic regions.
+The analysis focuses on:
+
+- Overall sales and order performance
+- Sales trends over time
+- Category and sub-category performance
+- Regional performance
+- Customer segment contribution
+- Top-performing products
+- Top customers
+- Geographic sales distribution
+
+The analysis was performed using SQL, Power Query, and Power BI.
 
 ---
 
-## 1. Sales Performance
+## 1. Overall Business Performance
 
-- Total Sales: **$2.26M**
-- Total Orders: **4,922**
-- Total Customers: **793**
-- Average Order Value: **$459.48**
+| KPI | Value |
+|---|---:|
+| Total Sales | $2.26M |
+| Total Orders | 4,922 |
+| Total Customers | 793 |
+| Average Order Value | $459.48 |
 
-Sales showed a strong overall upward trend after 2016.
+The business generated approximately **$2.26M in sales** across 4,922 orders and 793 customers.
+
+The average order value was approximately **$459.48**.
+
+---
+
+## 2. Sales Trend
 
 | Year | Sales |
 |---|---:|
@@ -24,29 +43,35 @@ Sales showed a strong overall upward trend after 2016.
 | 2017 | ~$600K |
 | 2018 | ~$722K |
 
-Sales increased significantly from 2016 to 2018, indicating strong growth toward the end of the period.
+Sales declined slightly in 2016 before accelerating significantly in 2017 and 2018.
+
+Sales increased by approximately **57% from 2016 to 2018**, indicating strong growth toward the end of the analysis period.
+
+### Business implication
+
+The business should investigate what changed after 2016, particularly in terms of product demand, customer segments, and regional performance.
 
 ---
 
-## 2. Category Performance
+## 3. Category Performance
 
-Technology generated the highest total sales:
+| Category | Sales | Share |
+|---|---:|---:|
+| Technology | ~$827K | 36.6% |
+| Furniture | ~$729K | 32.2% |
+| Office Supplies | ~$705K | 31.2% |
 
-| Category | Sales |
-|---|---:|
-| Technology | ~$827K |
-| Furniture | ~$729K |
-| Office Supplies | ~$705K |
+Technology is the highest-performing category, generating approximately **$827K** in sales.
 
-Technology contributed approximately **36.6%** of total sales, making it the strongest-performing category.
+However, the overall category mix is relatively balanced, meaning the business is not dependent on a single category.
 
-However, the three categories are relatively balanced, with no single category dominating the entire business.
+### Business implication
+
+Technology should be monitored for continued demand and inventory availability, while Furniture and Office Supplies provide significant opportunities for additional growth.
 
 ---
 
-## 3. Regional Performance
-
-The West region generated the highest sales.
+## 4. Regional Performance
 
 | Region | Sales |
 |---|---:|
@@ -55,86 +80,149 @@ The West region generated the highest sales.
 | Central | ~$490K |
 | South | ~$390K |
 
-The West and East regions together account for a substantial share of total revenue.
+The **West** is the highest-performing region, while the **South** generates the lowest sales.
 
-The South region has the lowest sales and could be investigated further to understand whether the difference is related to customer demand, product mix, or order volume.
+West and East together represent a substantial portion of total revenue.
 
----
+### Business implication
 
-## 4. Customer Segment Performance
+The South region requires further investigation.
 
-The Consumer segment is the largest contributor to revenue.
+Possible areas to investigate:
 
-| Segment | Sales |
-|---|---:|
-| Consumer | ~$1.15M |
-| Corporate | ~$690K |
-| Home Office | ~$420K |
+- Customer count
+- Number of orders
+- Average order value
+- Product/category mix
+- Customer segment composition
 
-Consumer customers contribute approximately **51% of total sales**.
-
-This makes the Consumer segment the most important segment in terms of revenue contribution.
+The objective should be to determine whether the lower revenue is caused by lower demand, fewer customers, lower order frequency, or product mix.
 
 ---
 
-## 5. Product Performance
+## 5. Customer Segment Performance
 
-The analysis of the Top 10 products shows that a small number of products generate significantly higher sales than the rest of the product portfolio.
+| Segment | Sales | Share |
+|---|---:|---:|
+| Consumer | ~$1.15M | 50.8% |
+| Corporate | ~$690K | 30.4% |
+| Home Office | ~$420K | 18.8% |
+
+The **Consumer segment contributes approximately 51% of total sales**, making it the largest customer segment.
+
+Corporate customers contribute approximately 30%, while Home Office contributes approximately 19%.
+
+### Business implication
+
+Consumer customers should remain a major focus for retention and revenue growth.
+
+At the same time, Corporate and Home Office segments provide opportunities for targeted campaigns and segment-specific product strategies.
+
+---
+
+## 6. Product Performance
+
+The Top 10 Products analysis shows that certain products generate significantly more sales than most individual products.
 
 The highest-selling product identified was:
 
-**Canon imageCLASS 2200 Advanced Copier — ~$62K**
+**Canon imageCLASS 2200 Advanced Copier — approximately $62K**
 
-This product significantly outperformed the other individual products in the Top 10 analysis.
+The remaining top-performing products generated considerably lower individual sales.
+
+### Business implication
+
+High-performing products should be monitored for:
+
+- Inventory availability
+- Demand consistency
+- Sales trends
+- Category contribution
+- Regional demand
+
+These products may also be suitable for targeted promotions and inventory prioritization.
 
 ---
 
-## 6. Customer Performance
+## 7. Customer Performance
+
+The Top 10 Customers analysis identifies customers contributing significant amounts of revenue.
 
 The highest-value customer identified was:
 
-**Sean Miller — ~$25K in sales**
+**Sean Miller — approximately $25K in sales**
 
-The Top 10 customer analysis can help identify high-value customers who contribute disproportionately to revenue.
+The Top 10 customer analysis can help identify high-value customers for retention and relationship-building strategies.
 
-These customers may be useful targets for retention and relationship-building strategies.
+### Business implication
+
+High-value customers should be analyzed further based on:
+
+- Order frequency
+- Average order value
+- Product preferences
+- Region
+- Customer segment
+- Recency of purchases
 
 ---
 
-## 7. Category Trends
+## 8. Category Trends
 
-Technology, Furniture, and Office Supplies all showed stronger sales toward 2018.
+All three major categories showed stronger sales toward 2018.
 
-Technology experienced the strongest growth among the three categories, while Office Supplies also showed substantial improvement after 2016.
+Technology demonstrated the strongest overall growth, while Office Supplies also showed substantial improvement after 2016.
 
-This indicates that the overall sales growth was not driven by a single category alone.
+This indicates that overall business growth was supported by multiple categories rather than a single category alone.
 
 ---
 
-## 8. Business Opportunities
+## 9. Geographic Distribution
 
-Based on the analysis, several areas deserve further investigation:
+The Power BI geographic analysis shows sales distributed across states throughout the United States.
 
-### Expand high-performing categories
+The strongest overall regional performance comes from the West and East regions, while the South trails the other regions.
 
-Technology is the strongest category and should be monitored for inventory availability and continued demand.
+### Business implication
 
-### Investigate the South region
+Geographic performance can be used to identify markets where the company should:
 
-The South has the lowest regional sales. Further analysis could examine customer count, order frequency, product mix, and average order value.
+- Increase marketing activity
+- Expand product availability
+- Investigate customer acquisition
+- Analyze category demand
+- Improve sales coverage
 
-### Retain high-value customers
+---
 
-The Top 10 customer analysis identifies customers contributing significant revenue and can support customer retention strategies.
+## 10. Key Business Opportunities
 
-### Monitor high-performing products
+### 1. Investigate the South Region
 
-Products with consistently high sales may require better inventory planning and availability.
+The South has the lowest regional sales.
+
+Further analysis should determine whether this is caused by customer volume, order frequency, average order value, or product mix.
+
+### 2. Maintain Technology Momentum
+
+Technology is the highest-performing category and should be monitored for continued demand and inventory availability.
+
+### 3. Retain High-Value Customers
+
+The Top 10 customer analysis provides a starting point for identifying customers who contribute disproportionately to revenue.
+
+### 4. Prioritize High-Performing Products
+
+Products such as the Canon imageCLASS 2200 Advanced Copier should be monitored for continued demand and stock availability.
+
+### 5. Understand Post-2016 Growth
+
+The significant increase in sales between 2016 and 2018 deserves further investigation to identify the factors responsible for the growth.
 
 ---
 
 ## Conclusion
 
-The analysis shows a business with strong growth toward 2018, relatively balanced category performance, a dominant Consumer customer segment, and stronger sales concentration in the West and East regions.
+The analysis shows a retail business with strong sales growth toward 2018, relatively balanced category performance, a dominant Consumer segment, and stronger revenue concentration in the West and East regions.
 
-The Power BI dashboard provides an interactive way to explore these patterns using Year, Region, and Category filters.
+The analysis combines SQL-based business questions with an interactive Power BI dashboard, allowing stakeholders to explore sales performance using Year, Region, and Category filters.
